@@ -1,13 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>Rambo</title>
+  </head>
+  <body>
+    <!-- Inicio menu de Navegacion -->
+    <nav class="nav">
+      <input class="nav__checkbox" id="nav__checkbox" type="checkbox" />
+      <label class="nav__toggle" for="nav__checkbox">
+        <img class="hamburger" src="img/icons8-menu-30.png" />
+        <img class="close" src="img/icons8-menu-30.png" />
+      </label>
+
+      <ul class="nav__menu">
+        <li>
+          <a href="index.html">
+            <h1 class="logo-home">Rambo</h1>
+          </a>
+        </li>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#titulo-secundario">Sylvester Stallone</a></li>
+        <li><a href="#peliculas">Peliculas</a></li>
+      </ul>
+    </nav>
+    <!-- Inicio Header -->
+    <header>
+      <img class="logo" src="img/rambo.svg" alt="Logo Rambo" />
+    </header>
+    <!-- Inicio Main -->
+    <main>
+        <h2 id="titulo-secundario">Sylvester Stallone</h2>
+        <div class="texto-centrado">
+            <img class="sly" src="img/ramboLastBlood.jpeg" alt="">
+            <p>
+            Michael Sylvester Gardenzio Stallone (Nueva York, 6 de julio de 1946), conocido simplemente como Sylvester Stallone, es un actor, guionista, productor y director de cine estadounidense de origen italiano.
+
+            Stallone es reconocido mundialmente como uno de los principales actores del cine de acción de Hollywood. Ha dado vida a dos personajes icónicos de la historia del cine: a Rocky Balboa, un desconocido boxeador de Filadelfia que contra todo pronóstico se convierte en campeón, y a John Rambo, un atormentado ex boina verde veterano de la guerra de Vietnam, especializado en guerrilla, supervivencia y combate. La cinta Rocky (1976) le valió tres nominaciones al premio Óscar, en la categoría de mejor actor, mejor película y mejor guion. En 2016, ganó el Globo de Oro como mejor actor de reparto por el papel de Rocky Balboa en el spin-off de la saga, Creed (2015), además de ser nominado al Óscar en la misma categoría.
+
+            Aparte de las sagas de Rocky y Rambo, entre sus cintas más populares se encuentran: Cobra (1986), Lock Up (1989), Tango y Cash (1989), Demolition Man (1993), Cliffhanger (1993), Asesinos (1995), Judge Dredd (1995) y The Expendables (2010). En televisión, destaca su papel protagónico en la serie Tulsa King.
+            </p>
+        </div>
+
+        <h2 id="peliculas">Rambo - Peliculas</h2>
+
+        <!-- grilla imagenes responsive -->
+
+        <div class="container">
+            <div class="hijo">
+            <a href="#firstBlood"><img src="img/ramboPrimeraSangre.jpg" width="350px"></div></a>
+            <div class="hijo">
+            <a href="#ramboDos"><img src="img/ramboParteDos.webp" width="350px"></div></a>
+            <div class="hijo">
+            <img src="img/ramboTres.jfif" width="350px"></div>
+            <div class="hijo">
+            <img src="img/ramboCuatro.jfif" width="350px"></div>
+            <div class="hijo">
+            <img src="img/Rambo_Last_Blood.jpg" width="350px"></div>
+        </div>
+
+        <h3 id="firstBlood">Rambo First Blood</h3>
+        <div class="texto-centrado">
+        <p>
+            John Rambo (Sylvester Stallone), un veterano de la guerra de Vietnam y miembro de las Fuerzas Especiales a quien se le condecoró con la Medalla de Honor del Congreso, tiene problemas para adaptarse a la vida de civil y vagabundea por Estados Unidos.</p>
+
+            <p>Rambo descubre que uno de los miembros de su antigua unidad, al que va a visitar, ha muerto de cáncer, causado por las exposiciones al Agente Naranja, lo cual lo deja muy dolido, aun en el fondo sabiendo que él es el último hombre vivo de su unidad. Al continuar el viaje llega a un pequeño pueblo en el estado de Washington, Hope (nombre ficticio, ya que la verdadera Hope, donde se rodó la película, se encuentra en la Columbia Británica, Canadá).</p>
+
+            <p>Nada más llegar tiene problemas con el sheriff local, Will Teasle (Brian Dennehy), quien, llevado por prejuicios hacia gente pobre como él, le conmina a irse. Rambo se niega y el sheriff lo detiene por vagabundear y por resistencia a la autoridad. Revisándolo, descubre sorprendido que lleva un cuchillo de combate militar y le pregunta para qué lo necesita, a lo que Rambo responde que es para cazar. Teasle no quiere creerle y lo lleva a la comisaría.</p>
+
+            <p>Una vez allí, es registrado y golpeado por varios agentes. Durante los golpes y la ducha forzada, Rambo experimenta recuerdos muy vívidos de su estancia como prisionero de guerra. Cuando los policías tratan de afeitarlo en seco, Rambo estalla al recordar un pasaje de su tortura, en la que recibió una herida física con un cuchillo; golpea a los oficiales, roba una motocicleta y se dirige a las montañas para esconderse.</p>
+
+            <p>Un pequeño grupo de policías sale en su busca para capturarle, pero son todos neutralizados por Rambo (sin causar ningún muerto, con excepción de uno de los policías que ha tratado de asesinarlo en venganza por la humillación), al ser especialista en técnicas de guerrilla. Entonces, el sheriff Teasle, humillado por la derrota, decide llamar a la Guardia Nacional.</p>
+
+            <p>El antiguo oficial al mando de Rambo, el coronel Samuel Trautman (Richard Crenna), advierte a las autoridades del riesgo de intentar capturar a Rambo, ya que, dada su experiencia en combate, puede matarlos a todos y aconseja calmar los ánimos, pero Teasle le ignora, porque en realidad persigue la muerte de Rambo llevado por sus prejuicios y en venganza por la derrota y la muerte del policía.</p>
+
+            <p>La Guardia Nacional encuentra el escondite de Rambo, la entrada de una mina, e intentan detenerlo. Debido a que comienzan a dispararle, Rambo intenta repelerlos también a disparos y la Guardia decide atacarlo con un lanzacohetes M72 LAW. Rambo, sabiendo que sus perseguidores le creen muerto, se escabulle por los túneles y encuentra otra salida cerca de la carretera principal del pueblo. Roba un camión de la Guardia Nacional y vuelve al pueblo decidido a vengarse por lo ocurrido, donde destruye una gasolinera, postes de teléfono y una tienda local de armas con el fin de distraer la atención de las fuerzas del orden.</p>
+
+            <p>Rambo localiza a Teasle, su objetivo, sobre la azotea de la comisaría. Surge un enfrentamiento entre ellos, que Teasle pierde. Cuando Rambo se dispone a acabar con la vida de Teasle, incitado por él, el coronel Trautman aparece para decirle a Rambo que se detenga y termine la "miniguerra" que había iniciado en ese pueblo. Rambo habla con el coronel entre lamentos y sollozos, liberando su ira y penas ocultas por la forma en que, al volver de la guerra, la sociedad lo ha maltratado y el ejército lo ha olvidado. Trautman comprende las palabras de Rambo y su pedido interno de ayuda, y lleno de dolor y tristeza decide abrazarlo.</p>
+
+            <p>Rambo accede a rendirse y sale de la comisaría junto a Trautman, mientras que Teasle es llevado al hospital con una mirada despreciativa de Rambo y de Trautman.</p>
+        </div>
+        </p>
+        <h3 id="ramboDos">Rambo First Blood Part 2</h3>
+        <div class="texto-centrado">
+            <p>John James Rambo lleva 5 años encarcelado por sus antiguos crímenes (en First Blood), pero recibe la visita del coronel Trautman, quien le hace la propuesta de la misión optativa de regresar a Vietnam, a comprobar si aún quedan prisioneros de guerra. Si la misión resulta bien, el presidente le concedería el perdón, y sería libre. Rambo acepta.</p>
+
+            <p>Está bajo las órdenes de un falso teniente, Marshall Murdock, al que en el fondo solo le interesan el dinero y el poder de su nación, y al que le da igual perder a unos cuantos hombres, por muy inocentes que sean, si sigue controlando las cosas como él quiere. Murdock le encomienda a Rambo que solo saque fotos, y que no ataque al enemigo. Pero al saltar en paracaídas sobre un área selvática prohibida, Rambo pierde todo su equipo, excepto un cuchillo dentado y un arco.</p>
+
+            <p>Ya en Vietnam es ayudado por una chica vietnamita, Co Bao. Tras descubrir que el campamento al que lo habían enviado no estaba vacío, empieza a atacar. Cuando tiene que regresar a Tailandia, Murdock, al saber que lleva con él a un prisionero norteamericano, y que no ha hecho fotos como le dijo, ordena que suspendan la misión, abandonando a Rambo acorralado de nuevo con las fuerzas armadas vietnamitas. Rambo es capturado por las fuerzas locales y torturado por el soviético Teniente Coronel Podovsky. Entretanto, Trautman confronta a Murdock por traicionar a Rambo, y después de que Murdock intenta justificar su modo de proceder, Trautman le insinúa que era una equivocación de su parte dar el asunto por "cerrado", cómo pretendía hacer, ya que Rambo no se dará por vencido. Co Bao se hace pasar por prostituta y ayuda a Rambo a escapar del campamento. Llegando a la ladera del río, Rambo agradece y promete a Co casarse con ella para que pueda emigrar hacia Estados Unidos, lo que significaba para él, el fin de su guerra, cerrar el círculo de violencia y muerte que experimenta. Pero, de regreso a la base, el comandante aliado local Tay acribilla y asesina a Co. Rambo toma en sus brazos a Co mientras muere, prometiéndole que nunca la olvidará y que en verdad la amaba; y la sepulta en la jungla.</p>
+
+            <p>Sumamente dolido y furioso, Rambo saca su lado más oscuro y violento, empezando a liquidar a los soldados vietnamitas y soviéticos, incluido Tay, a quien mata con una flecha explosiva. Más tarde, finalmente consigue llegar a su destino, al sitio donde están los prisioneros estadounidenses. Se dirige a un pequeño campamento enemigo con varios vehículos y lo destruye con flechas explosivas. Secuestra un helicóptero Bell 212 de los soviéticos después de echar a Yushin, y se dirige hacia el campo de prisioneros de guerra. Destruye la mayor parte del campamento con el helicóptero, luego aterriza y se arma con la ametralladora que está montada en el Huey, mata a los soldados restantes y rescata a todos los prisioneros de guerra. Llegan al helicóptero y se dirigen hacia el centro de comando estadounidense en Tailandia. Podovsky los persigue en su helicóptero Mil Mi-24. Aunque el helicóptero de Rambo está muy dañado, logra aterrizarlo en un río, y finge su muerte. Podovsky se le acerca y se descuida, momento en el que Rambo dispara un cohete al helicóptero de Podovsky, matándolo.</p>
+
+            <p>Rambo luego regresa a la base y destruye el centro de comando de Murdock. Amenaza a Murdock con un cuchillo, desafiándolo a encontrar y rescatar a los prisioneros de guerra estadounidenses restantes en Vietnam. Trautman luego consuela a Rambo y trata de apaciguarlo. Un Rambo enojado responde que solo quiere que su país ame a sus soldados tanto como sus soldados lo aman a él. Cuando Rambo se va, Trautman le pregunta: "¿Cómo vivirás, John?". A lo que Rambo responde, "Día a día". Los créditos de la película avanzan mientras Rambo se aleja mientras su mentor lo observa.</p>
+        </div>
+        <h3>Rambo 3</h3>
+        <h3>Rambo 4: Regreso al infierno</h3>
+        <h3>Rambo Last Blood</h3>
+    </main>
+    <!-- Inicio Footer -->
+    <footer>
+        <div>
+            <h3 class="logo-footer">Rambo</h3>
+            
+        </div>
+        <div>
+            <h3>Como contactarme:</h3>
+            <h4>Email: gerardo.gambarte17@gmail.com</h4>
+            <a href="https://www.linkedin.com/in/gerardo-gambarte/">linkedin</a>
+        </div>
+    </footer>
+  </body>
 </html>
