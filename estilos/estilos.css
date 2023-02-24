@@ -79,6 +79,19 @@ h3{
     font-size: 30px;
     text-align: center;
 }
+/* medidas de img para vista pc */
+.first{
+  width: 800px;
+  height: 650px;
+}
+.second{
+  width: 950px;
+  height: 750px;
+}
+.third{
+  width: 1050px;
+  height: 550px;
+}
 .sly{
     width: 800px;
 }
@@ -121,7 +134,11 @@ p{
     font-family: 'Bebas Neue';
     font-size: 40px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 75px;
+}
+.linkedin{
+  margin-left: 130px;
+  font-weight: 800;
 }
 a{
     font-family: 'Bebas Neue';
