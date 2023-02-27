@@ -10,7 +10,7 @@ body {
 }
 .nav {
   background-color: black;
-  height: 50px;
+  height: 150px;
 }
 .nav__toggle {
   position: absolute;
@@ -50,7 +50,7 @@ li:first-child {
 }
 /* Selector hermano */
 #nav__checkbox:checked ~ ul.nav__menu li {
-    z-index: 1;
+  z-index: 1;
   display: block;
 }
 /* Selector hermano */
@@ -59,7 +59,7 @@ li:first-child {
 }
 /* Selector hermano */
 #nav__checkbox:checked ~ label.nav__toggle .close {
-  display: block;
+  display: block; 
 }
 header{
     display: flex;
@@ -157,6 +157,56 @@ footer{
     font-size: 25px;
 
 }
+/* estilos formulario de contacto */
+.contenedor {
+  margin: 50px auto;
+  width: 500px;
+  padding: 50px;
+  background: #000000;
+  border-radius: 35px;
+  border: 5px solid #d0d0d0;
+  z-index: 0;
+}
+
+.contenedor h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  color: red;
+  text-align: center; }
+
+.contenedor .elemento label {
+  color: white; }
+
+.contenedor .elemento input {
+  width: 95%;
+  padding: 10px 0;
+  color: black;
+  background: #e6ffff;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px; }
+
+.contenedor .elemento input[type="submit"] {
+  background-color: #e6ffff;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px; }
+
+.contenedor .elemento input[type="reset"] {
+  background-color: #e6ffff;
+  border: none;
+  border-radius: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 15px;
+  margin-top: 30px; }
+
 /* Media querie medida 768px */
 @media only screen and (min-width: 768px) {
   .nav__toggle {
@@ -168,15 +218,135 @@ footer{
   .nav__menu li {
     display: block;
   }
+.texto-centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+display: grid;
+padding-bottom: 100px;
+padding-right: 100px;
+grid-gap: 150px 10px;
+grid-template-columns: repeat(3, 400px);
+grid-template-rows: repeat(2, 400px);
+justify-content: center;
+}
+.logo{
+  padding-left: 100px;
+}
+.sly{
+  width: 700px;
+}
+body{
+  overflow-x: hidden;
+}
 }
 
 @media screen and (max-width: 600px) {
     .container {
-      display: grid;
-    padding: 1rem;
+    display: grid;
+    padding: 3rem;
     grid-gap: 9rem;
     grid-template-columns: repeat(1, 400px);
-    grid-template-rows: repeat(6, 400px);
+    grid-template-rows: repeat(5, 550px);
     justify-content: center;
+    }
+    /* medidas de img para vista celu */
+  .first{
+  width: 420px;
+  height: 400px;
+  }
+  .second{
+  width: 500px;
+  height: 450px;
+  }
+  .third{
+  width: 500px;
+  height: 350px;
+  }
+  .sly{
+    width: 400px;
+  }
+  .logo{
+    width: 500px;
+    height: 600px;
+  }
+  .img-responsive{
+    width: 430px;
+    height: 500px;
+  }
+  footer{
+  flex-direction: column;
+  }
+  h4{
+    text-align: center;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .contenedor {
+    margin: 50px auto;
+    width: 310px;
+    padding:50px;
+    background: #000000;
+    border-radius: 35px;
+    z-index: 1;
+}
+}
+@media screen and (min-width:601px) and (max-width: 767px) {
+  .container {
+  display: grid;
+  padding: 0rem;
+  grid-gap: 150px;
+  grid-template-columns: repeat(1, 350px);
+  grid-template-rows: repeat(3, 535px);
+  justify-content: center;
+  }
+  .hijo{
+    width: 350px;
+  }
+  .texto-centrado{
+    margin-right: 0px;
+  }
+  .logo{
+    padding-top: 100px;
+    width: 500px;
+    height: 450px;
+  }
+  .sly{
+    padding-left: 0px;
+    width: 500px;
+    height: 450px;
+  }
+  .first{
+    width: 500px;
+    height: 350px;
+  }
+  .second{
+    width: 505px;
+    height: 450px;
+  }
+  .third{
+    width: 505px;
+    height: 350px;
+  }
+  .img-responsive{
+    width: 500px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+  .container {
+    display: grid;
+    padding: 0rem;
+    grid-gap: 150px;
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 535px);
+    justify-content: center;
+    }
+    .hijo{
+      width: 350px;
     }
 }
